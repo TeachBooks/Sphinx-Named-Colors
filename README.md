@@ -21,6 +21,7 @@ This extension defines, based on the CSS named color and custom named colors (pr
 - Sphinx roles;
 - Sphinx admonitions;
 - Sphinx admonition classes;
+
 that are styled by a generated CSS file.
 
 If specified, each color will have a different value in the light and dark data-theme. 
