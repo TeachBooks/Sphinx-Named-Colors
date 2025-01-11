@@ -154,9 +154,8 @@ A special new class for existing admonitions is also introduced: `no-title`. Thi
 
 For the named color admonitions the class `show-bar` is introduced for titleless admonitions. This focres printing of the title bar. If a title is given, the title will be printed too and adding the class `show-bar` is redundant.
 
-::::{warning}
-Note that, because of the use of CSS, sometimes results may differ from the expected result.
-::::
+> [!WARNING]
+> Note that, because of the use of CSS, sometimes results may differ from the expected result.
 
 ## Examples & details
 
