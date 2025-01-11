@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+[project]
+name = "sphinx-named-colors"
+dynamic=["version"]
+description = "A custom Sphinx extension to use CSS named colors and custom named colors in a Sphinx book"
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [
+    { name = "Dennis den Ouden-van der Horst", email = "d.denouden-vanderhorst@tudelft.nl" }
+]
+dependencies = [
+    "sphinx",
+    "sphinxnotes-comboroles"
+]
+
+requires-python = ">=3.10"
+
+[tool.hatch]
+version.source = "vcs"
+build.hooks.vcs.version-file = "src/sphinx_named_colors/_version.py"
