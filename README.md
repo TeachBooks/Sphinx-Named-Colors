@@ -90,7 +90,7 @@ named_colors_custom_colors: None
 
 > [!NOTE]
 > In the next part, replace `namedcolor` by the name of the CSS/custom named color.
-`
+
 ### $\LaTeX$ elements
 
 ```latex
@@ -165,4 +165,4 @@ To see examples of usage visit [this page in the TeachBooks manual](https://teac
 
 This tool's repository is stored on [GitHub](https://github.com/TeachBooks/Sphinx-Named-Colors). If you'd like to contribute, you can create a fork and open a pull request on the [GitHub repository](https://github.com/TeachBooks/Sphinx-Named-Colors).
 
-The `README.md` of the branch `Manual` is also part of the [TeachBooks manual](https://teachbooks.io/manual/intro.html) as a submodule.
+The `README.md` of the branch `manual` is also part of the [TeachBooks manual](https://teachbooks.io/manual/intro.html) as a submodule.
