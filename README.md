@@ -203,7 +203,7 @@ sphinx:
     named_colors_dark_and_light: true # default value
     named_colors_saturation: 1.5 # default value
     named_colors_include_CSS: true # default value
-    named_colors_custom_colors: {'onlylight':[165,21,160],'lightanddark':[45,180,117,204,158,110]}
+    named_colors_custom_colors: {'onlylight':[165,21,160],'lightanddark':[45,180,117,204,158,110],'hyphen-color':[45,180,117,165,21,160]}
 ```
 
 ### $\LaTeX$ colors
@@ -231,6 +231,9 @@ Some examples of [CSS named colors](https://developer.mozilla.org/en-US/docs/Web
    * - lightanddark
      - `\lightanddark{\sum}_{n=1}^\infty`
 	 - $\lightanddark{\sum}_{n=1}^\infty$
+     * - hyphen-color
+     - `\class{hyphen-color}{\sum}_{n=1}^\infty`
+	 - $\class{hyphen-color}{\sum}_{n=1}^\infty$
 ::::
 
 All of the $\LaTeX$ commands can be used in all components that already support $\LaTeX$.
@@ -262,6 +265,10 @@ The defined roles can be used in regular MarkDown code, similar to other roles s
      - strong emphasis
      - `` {lightanddark_strong_emphasis}`strong emphasis` ``
 	 - {lightanddark_strong_emphasis}`strong emphasis`
+  * - hyphen-color
+     - regular
+     - `` {hyphen-color}`regular` ``
+     - {hyphen-color}`regular`
 ::::
 
 ### Colored admonitions
@@ -491,7 +498,7 @@ Content of admonition.
 
 ::::::{grid} 1
 :::::{grid-item-card}
-::::{gold}
+::::{hyphen-color}
 :class: show-bar, warning
 Content of admonition.
 ::::
