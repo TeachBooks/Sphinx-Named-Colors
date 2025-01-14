@@ -1,12 +1,5 @@
 # Custom named colors
 
-```{admonition} User types
-:class: tip
-This section is useful for user type 3-5.
-```
-+++
-{bdg-primary}`Sphinx Extension`
-
 ## Introduction
 
 This extensions provides a simple solution to use [CSS named colors](https://developer.mozilla.org/en-US/docs/Web/CSS/named-color) and ___custom named colors___ in:
@@ -73,7 +66,7 @@ named_colors_include_CSS: true # default value
 named_colors_dark_and_light: true # default value
 ```
 
-- _true_: for all [CSS named colors](https://developer.mozilla.org/en-US/docs/Web/CSS/named-color) and all custom named colors a secondary value will be generated for use in the dark data-theme, unless otherwise specifed for custom colors. The generated colors emulate the same as the CSS filter `invert(1) hue_rotate(180) saturate(<val>);` where `<val>` is the value set by `named_colors_saturation`.
+- _true_: for all [CSS named colors](https://developer.mozilla.org/en-US/docs/Web/CSS/named-color) and all custom named colors a secondary value will be generated for use in the dark data-theme, unless otherwise specifed for custom colors. The generated colors emulate the same as the CSS filter `invert(1) hue_rotate(180) saturate(<val>);` where `<val>` is the value set by `named_colors_saturation`. This filter is also used in the [Sphinx Image Inverter](https://github.com/TeachBooks/Sphinx-Image-Inverter)
 - _false_: This disables the use of different colors in the dark data-theme, even if specified for custom colors.
 
 ```yaml
@@ -163,9 +156,8 @@ A special new class for existing admonitions is also introduced: `no-title`. Thi
 
 For the named color admonitions the class `show-bar` is introduced for titleless admonitions. This forces printing of the title bar. If a title is given, the title will be printed too and adding the class `show-bar` is redundant.
 
-::::{warning}
-Note that, because of the use of CSS, sometimes results may differ from the expected result.
-::::
+> [!WARNING]
+> Note that, because of the use of CSS, sometimes results may differ from the expected result.
 
 ## Examples & details
 
