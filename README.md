@@ -98,7 +98,7 @@ named_colors_custom_colors: None
 - _dictionary_: A Python dictionary where each `key` defines a custom name and the `value` is a list of 3 or 6 integers, with each integer at minimum 0 and at maximum 255.
   - If 3 integers are provided, these are the RGB values of the custom named color and, if specified, the dark data-theme color will be generated.
   - If 6 integers are provided, the first set of 3 integers form the RGB values of the custom named color and the second set of 3 integers form the RGB values of the dark data-theme color.
-  - Each key should contain only characters from the ranges `a-z`.
+  - Each key should contain only characters from the ranges `a-z`. Hyphens (`-`) are allowed, however this is not recommended.
   - An example value:
     - `` {'onlylight':[165,21,160],'lightanddark':[45,180,117,204,158,110]} ``
 
@@ -109,8 +109,19 @@ named_colors_custom_colors: None
 
 ### $\LaTeX$ elements
 
+**Named colors without hyphens**
+
 ```latex
 \namedcolor{...}
+```
+
+- Only use in $\LaTeX$ code.
+- This will typeset `...` in the color _namedcolor_.
+
+**Named colors with hyphens**
+
+```latex
+\class{namedcolor}{...}
 ```
 
 - Only use in $\LaTeX$ code.
