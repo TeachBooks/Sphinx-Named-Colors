@@ -1,5 +1,12 @@
 # Sphinx extension: Named colors
 
+```{admonition} User types
+:class: tip
+This section is useful for user type 3-5.
+```
++++
+{bdg-primary}`Sphinx Extension`
+
 ## Introduction
 
 This extensions provides a simple solution to use [CSS named colors](https://developer.mozilla.org/en-US/docs/Web/CSS/named-color) and ___custom named colors___ in:
@@ -155,8 +162,9 @@ A special new class for existing admonitions is also introduced: `no-title`. Thi
 
 For the named color admonitions the class `show-bar` is introduced for titleless admonitions. This forces printing of the title bar. If a title is given, the title will be printed too and adding the class `show-bar` is redundant.
 
-> [!WARNING]
-> Note that, because of the use of CSS, sometimes results may differ from the expected result.
+::::{warning}
+Note that, because of the use of CSS, sometimes results may differ from the expected result.
+::::
 
 ## Examples & details
 
