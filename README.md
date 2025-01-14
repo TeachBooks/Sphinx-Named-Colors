@@ -28,7 +28,7 @@ Install the `sphinx-named-colors` package using `pip`:
 ```
 pip install git+https://github.com/TeachBooks/Sphinx-Named-Colors.git
 ```
-
+    
 **Step 2: Add to `requirements.txt`**
 
 Make sure that the package is included in your project's `requirements.txt` to track the dependency:
@@ -53,7 +53,22 @@ sphinx:
 
 ## Configuration
 
-This extension provides the following configuration values:
+This extension provides some configuration values, which can be added to:
+
+```yaml
+sphinx: 
+    config:
+        .
+        .
+        .
+        named_colors_include_CSS: true # default value
+        named_colors_dark_and_light: true # default value
+        named_colors_saturation: 1.5 # default value
+        named_colors_custom_colors: None
+        .
+        .
+        .
+```
 
 ```yaml
 named_colors_include_CSS: true # default value
