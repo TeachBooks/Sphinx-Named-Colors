@@ -1,4 +1,4 @@
-# Sphinx extension: Named colors
+# Custom named colors
 
 ```{admonition} User types
 :class: tip
