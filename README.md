@@ -66,7 +66,7 @@ named_colors_include_CSS: true # default value
 named_colors_dark_and_light: true # default value
 ```
 
-- _true_: for all [CSS named colors](https://developer.mozilla.org/en-US/docs/Web/CSS/named-color) and all custom named colors a secondary value will be generated for use in the dark data-theme, unless otherwise specifed for custom colors. The generated colors emulate the same as the CSS filter `invert(1) hue_rotate(180) saturate(<val>);` where `<val>` is the value set by `named_colors_saturation`.
+- _true_: for all [CSS named colors](https://developer.mozilla.org/en-US/docs/Web/CSS/named-color) and all custom named colors a secondary value will be generated for use in the dark data-theme, unless otherwise specifed for custom colors. The generated colors emulate the same as the CSS filter `invert(1) hue_rotate(180) saturate(<val>);` where `<val>` is the value set by `named_colors_saturation`. This filter is also used in the [Sphinx Image Inverter](https://github.com/TeachBooks/Sphinx-Image-Inverter)
 - _false_: This disables the use of different colors in the dark data-theme, even if specified for custom colors.
 
 ```yaml
