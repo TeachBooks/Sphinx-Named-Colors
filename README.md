@@ -33,14 +33,14 @@ To use this extenstion, follow these steps:
 
 Install the `sphinx-named-colors` package using `pip`:
 ```
-pip install sphinx-named-colors
+pip install git+https://github.com/TeachBooks/Sphinx-Named-Colors.git
 ```
 
 **Step 2: Add to `requirements.txt`**
 
 Make sure that the package is included in your project's `requirements.txt` to track the dependency:
 ```
-sphinx-named-colors
+git+https://github.com/TeachBooks/Sphinx-Named-Colors.git
 ```
 
 **Step 3: Enable in `_config.yml`**
@@ -96,9 +96,8 @@ named_colors_custom_colors: None
 
 ## Provided code
 
-::::{note}
-In the next part, replace `namedcolor` by the name of the CSS/custom named color.
-::::
+> [!NOTE]
+> In the next part, replace `namedcolor` by the name of the CSS/custom named color.
 
 ### $\LaTeX$ elements
 
@@ -118,7 +117,7 @@ In the next part, replace `namedcolor` by the name of the CSS/custom named color
 - Only use in _MarkDown_ code.
 - This will typeset `...` in the color _namedcolor_.
 
-To provide the use of {strong}`strong` and/or {emphasis}`emphasis` colored text, we als provide the next three roles:
+To provide the use of **strong** and/or _emphasis_ colored text, we als provide the next three roles:
 
 ```md
 {namedcolor_strong}`...`
@@ -161,7 +160,7 @@ In both cases extra classes can be added to the admonition to apply other stylin
 
 A special new class for existing admonitions is also introduced: `no-title`. This suppresses printing of the title bar, even if the title is given. For the named color admonitions this happens automatically if no title is given.
 
-For the named color admonitions the class `show-bar` is introduced for titleless admonitions. This forces printing of the title bar. If a title is given, the title will be printed too and adding the class `show-bar` is redundant. 
+For the named color admonitions the class `show-bar` is introduced for titleless admonitions. This forces printing of the title bar. If a title is given, the title will be printed too and adding the class `show-bar` is redundant.
 
 ::::{warning}
 Note that, because of the use of CSS, sometimes results may differ from the expected result.
@@ -169,308 +168,7 @@ Note that, because of the use of CSS, sometimes results may differ from the expe
 
 ## Examples & details
 
-### Overview of chosen options for the examples
-
-```yaml
-sphinx:
-  config:
-    named_colors_dark_and_light: true # default value
-    named_colors_saturation: 1.5 # default value
-    named_colors_include_CSS: true # default value
-    named_colors_custom_colors: {'onlylight':[165,21,160],'lightanddark':[45,180,117,204,158,110]}
-```
-
-### $\LaTeX$ colors
-
-Some examples of [CSS named colors](https://developer.mozilla.org/en-US/docs/Web/CSS/named-color) and the __custom named colors__ used within LaTeX code. Do not forget to check out the colors in the <span class='only-light'>dark</span><span class='only-dark'>light</span> data-theme!
-
-::::{list-table}
-:widths: auto
-:header-rows: 1
-   * - Color
-     - $\LaTeX$ Code
-     - Result
-   * - olive
-     - `\olive{\int_a^bf(x)dx}`
-     - $\olive{\int_a^bf(x)dx}$
-   * - hotpink
-     - `1.\hotpink{\mathbf{48}}`
-     - $1.\hotpink{\mathbf{48}}$
-   * - darkturquoise
-     - `\dfrac{\darkturquoise{\partial}f}{\darkturquoise{\partial}x}`
-     - $\dfrac{\darkturquoise{\partial}f}{\darkturquoise{\partial}x}$
-   * - onlylight
-     - `\onlylight{\LaTeX}`
-	 - $\onlylight{\LaTeX}$
-   * - lightanddark
-     - `\lightanddark{\sum}_{n=1}^\infty`
-	 - $\lightanddark{\sum}_{n=1}^\infty$
-::::
-
-All of the $\LaTeX$ commands can be used in all components that already support $\LaTeX$.
-
-### MarkDown text colors
-
-The defined roles can be used in regular MarkDown code, similar to other roles such as `numref` and `code`.
-
-::::{list-table}
-:widths: auto
-:header-rows: 1
-   * - Color
-     - Style
-     - Markdown Code
-     - Result
-   * - olive
-     - regular
-     - `` {olive}`regular` ``
-     - {olive}`regular`
-   * - hotpink
-     - strong
-     - `` {hotpink_strong}`strong` ``
-     - {hotpink_strong}`emphasis`
-   * - onlylight
-     - emphasis
-     - `` {onlylight_emphasis}`emphasis`  ``
-     - {onlylight_emphasis}`emphasis`
-   * - lightanddark
-     - strong emphasis
-     - `` {lightanddark_strong_emphasis}`strong emphasis` ``
-	 - {lightanddark_strong_emphasis}`strong emphasis`
-::::
-
-### Colored admonitions
-
-Any existing admonition supporting the `class` option, whether provided by Sphinx or by a Sphinx extension, can be given a different color by adding a CSS/custom named color to the list of classes.
-
-An alternative option is to use an admonition with the name of the CSS/custom named color and add the type of admonition to the list of classes. In that case and for admonitions without the title argumentbut an automatic title (such as `wanring`), a title has to be set explicitly. This alternative approach does take over numbering (if any) of the oringinal admonition type (if any).
-
-Following are some examples with different colors, with the two code options next to each other, followed by the two results.
-
-A special feature is a new class for existing admonitions: `no-title`. This suppresses printing of the title, even if the title is given. For the named color admonitions this happens automatically if no title is given.
-
-**General admonition**
-
-::::::{grid} 2
-:::::{grid-item-card}
-```md
-::::{admonition} General admonition with title
-:class: olive
-Content of general admonition.
-::::
-```
-:::::
-:::::{grid-item-card}
-```md
-::::{olive} General admonition with title
-Content of general admonition.
-::::
-```
-:::::
-::::::
-
-::::::{grid} 2
-:::::{grid-item-card}
-::::{admonition} General admonition with title
-:class: olive
-Content of general admonition.
-::::
-:::::
-:::::{grid-item-card}
-::::{olive} General admonition with title
-Content of general admonition.
-::::
-:::::
-::::::
-
-**Dropwdown admonition**
-
-::::::{grid} 2
-:::::{grid-item-card}
-```md
-::::{admonition} Dropdown admonition with title
-:class: hotpink, dropdown
-Content of general admonition.
-::::
-```
-:::::
-:::::{grid-item-card}
-```md
-::::{hotpink} Dropdown admonition with title
-:class: dropdown
-Content of general admonition.
-::::
-```
-:::::
-::::::
-
-::::::{grid} 2
-:::::{grid-item-card}
-::::{admonition} Dropdown admonition with title
-:class: hotpink, dropdown
-Content of general admonition.
-::::
-:::::
-:::::{grid-item-card}
-::::{hotpink} Dropdown admonition with title
-:class: dropdown
-Content of general admonition.
-::::
-:::::
-::::::
-
-**Common admonitions**
-
-::::::{grid} 2
-:::::{grid-item-card}
-```md
-::::{warning}
-:class: darkturquoise
-Content of warning.
-::::
-```
-:::::
-:::::{grid-item-card}
-```md
-::::{darkturquoise} Warning
-:class: warning
-Content of warning.
-::::
-```
-:::::
-::::::
-
-::::::{grid} 2
-:::::{grid-item-card}
-::::{warning}
-:class: darkturquoise
-Content of warning.
-::::
-:::::
-:::::{grid-item-card}
-::::{darkturquoise} Warning
-:class: warning
-Content of warning.
-::::
-:::::
-::::::
-
-**Admonitions from Sphinx-Proof**
-
-::::::{grid} 2
-:::::{grid-item-card}
-```md
-::::{prf:defintion}
-:class: onlylight
-Content of definition.
-::::
-```
-:::::
-:::::{grid-item-card}
-```md
-::::{onlylight} Definition
-:class: definition
-Content of definition.
-::::
-```
-:::::
-::::::
-
-::::::{grid} 2
-:::::{grid-item-card}
-::::{prf:definition}
-:class: onlylight
-Content of definition.
-::::
-:::::
-:::::{grid-item-card}
-::::{onlylight} Definition
-:class: definition
-Content of definition.
-::::
-:::::
-::::::
-
-**Titleless admonitions**
-
-::::::{grid} 2
-:::::{grid-item-card}
-```md
-::::{admonition} This title will not be shown
-:class: lightanddark, no-title
-Content of admonition.
-::::
-```
-:::::
-:::::{grid-item-card}
-```md
-::::{lightanddark}
-Content of admonition.
-::::
-```
-:::::
-::::::
-
-::::::{grid} 2
-:::::{grid-item-card}
-::::{admonition} This title will not be shown
-:class: lightanddark, no-title
-Content of admonition.
-::::
-:::::
-:::::{grid-item-card}
-::::{lightanddark}
-Content of admonition.
-::::
-:::::
-::::::
-
-**Titleless admonitions with dropdown**
-
-In case a dropdown admonition is required without a title, only the new CSS/custum named color admonitions can safely be used.
-
-::::::{grid} 1
-:::::{grid-item-card}
-```md
-::::{lightcoral}
-:class: dropdown, warning
-Content of admonition.
-::::
-```
-:::::
-::::::
-
-::::::{grid} 1
-:::::{grid-item-card}
-::::{lightcoral}
-:class: dropdown, warning
-Content of admonition.
-::::
-:::::
-::::::
-
-**Titleless admonitions with title bar**
-
-In case an admonition is required without a title but with a title bar, only the new CSS/custum named color admonitions can safely be used. In that case add the class `show-bar`. 
-
-::::::{grid} 1
-:::::{grid-item-card}
-```md
-::::{gold}
-:class: show-bar, warning
-Content of admonition.
-::::
-```
-:::::
-::::::
-
-::::::{grid} 1
-:::::{grid-item-card}
-::::{gold}
-:class: show-bar, warning
-Content of admonition.
-::::
-:::::
-::::::
+To see examples of usage visit [this page in the TeachBooks manual](https://teachbooks.io/manual/external/Sphinx-Named-Colors/README.html).
 
 ## Contribute
 
