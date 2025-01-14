@@ -26,14 +26,14 @@ To use this extenstion, follow these steps:
 
 Install the `sphinx-named-colors` package using `pip`:
 ```
-pip install sphinx-named-colors
+pip install git+https://github.com/TeachBooks/Sphinx-Named-Colors.git
 ```
 
 **Step 2: Add to `requirements.txt`**
 
 Make sure that the package is included in your project's `requirements.txt` to track the dependency:
 ```
-sphinx-named-colors
+git+https://github.com/TeachBooks/Sphinx-Named-Colors.git
 ```
 
 **Step 3: Enable in `_config.yml`**
@@ -110,7 +110,7 @@ named_colors_custom_colors: None
 - Only use in _MarkDown_ code.
 - This will typeset `...` in the color _namedcolor_.
 
-To provide the use of {strong}`strong` and/or {emphasis}`emphasis` colored text, we als provide the next three roles:
+To provide the use of **strong** and/or _emphasis_ colored text, we als provide the next three roles:
 
 ```md
 {namedcolor_strong}`...`
@@ -160,7 +160,7 @@ For the named color admonitions the class `show-bar` is introduced for titleless
 
 ## Examples & details
 
-To see examples of usage visit [this page in the TeachBooks manual](https://teachbooks.io/manual/intro.html).
+To see examples of usage visit [this page in the TeachBooks manual](https://teachbooks.io/manual/external/Sphinx-Named-Colors/README.html).
 
 ## Contribute
 
