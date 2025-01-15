@@ -26,14 +26,14 @@ To use this extenstion, follow these steps:
 
 Install the `sphinx-named-colors` package using `pip`:
 ```
-pip install git+https://github.com/TeachBooks/Sphinx-Named-Colors.git
+pip install sphinx-named-colors
 ```
     
 **Step 2: Add to `requirements.txt`**
 
 Make sure that the package is included in your project's `requirements.txt` to track the dependency:
 ```
-git+https://github.com/TeachBooks/Sphinx-Named-Colors.git
+sphinx-named-colors
 ```
 
 **Step 3: Enable in `_config.yml`**
