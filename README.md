@@ -229,13 +229,13 @@ Some examples of [CSS named colors](https://developer.mozilla.org/en-US/docs/Web
      - $\dfrac{\darkturquoise{\partial}f}{\darkturquoise{\partial}x}$
    * - onlylight
      - `\onlylight{\LaTeX}`
-	   - $\onlylight{\LaTeX}$
+     - $\onlylight{\LaTeX}$
    * - lightanddark
      - `\lightanddark{\sum}_{n=1}^\infty`
-	   - $\lightanddark{\sum}_{n=1}^\infty$
+     - $\lightanddark{\sum}_{n=1}^\infty$
    * - hyphen-color
      - `\class{hyphen-color}{\sum}_{n=1}^\infty`
-	   - $\class{hyphen-color}{\sum}_{n=1}^\infty$
+     - $\class{hyphen-color}{\sum}_{n=1}^\infty$
 ::::
 
 All of the $\LaTeX$ commands can be used in all components that already support $\LaTeX$.
