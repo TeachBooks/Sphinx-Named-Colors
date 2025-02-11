@@ -222,8 +222,8 @@ Some examples of [CSS named colors](https://developer.mozilla.org/en-US/docs/Web
      - `\olive{\int_a^bf(x)dx}`
      - $\olive{\int_a^bf(x)dx}$
    * - hotpink
-     - `1.\hotpink{\mathbf{48}}`
-     - $1.\hotpink{\mathbf{48}}$
+     - `1.\hotpink{\mathbf{49}}`
+     - $1.\hotpink{\mathbf{49}}$
    * - darkturquoise
      - `\dfrac{\darkturquoise{\partial}f}{\darkturquoise{\partial}x}`
      - $\dfrac{\darkturquoise{\partial}f}{\darkturquoise{\partial}x}$
