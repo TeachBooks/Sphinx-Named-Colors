@@ -181,6 +181,25 @@ A special new class for existing admonitions is also introduced: `no-title`. Thi
 
 For the named color admonitions the class `show-bar` is introduced for titleless admonitions. This forces printing of the title bar. If a title is given, the title will be printed too and adding the class `show-bar` is redundant.
 
+You can define the symbol of your new admonition with the second method by defining it as:
+
+```md
+::::{namedcolor} Title (optional)
+:class: customsymbol
+Content
+::::
+```
+
+with a `customsymbol.css`-file in your `_static`-directory:
+
+```css
+div.customsymbol > .admonition-title::after {
+    content: "\<unicode_code_for_symbol>";
+}
+```
+
+In which you replaces `<unicode_code_for_symbol>` with for example `f10d` to get a [quotation symbol](https://fontawesome.com/icons/quote-left?s=solid).
+
 > [!WARNING]
 > Note that, because of the use of CSS, sometimes results may differ from the expected result.
 
