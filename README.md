@@ -1,5 +1,4 @@
-# Custom named colors
-
+````{margin}
 ```{attributiongrey} Attribution
 :class: attribution
 This page reuses MIT licensed content from {cite:t}`sphinx-colors`. {fa}`quote-left`{ref}`Find out more here.<external_resources>`
@@ -11,8 +10,9 @@ This section is useful for user type 3-5.
 ```
 +++
 {bdg-primary}`Sphinx Extension`
+````
 
-## Introduction
+# Custom named colors
 
 This extensions provides a simple solution to use [CSS named colors](https://developer.mozilla.org/en-US/docs/Web/CSS/named-color) and ___custom named colors___ in:
 - $\LaTeX$;
