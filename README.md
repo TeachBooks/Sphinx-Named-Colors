@@ -530,7 +530,7 @@ Content of admonition.
 ::::::
 
 ## Exercise
-Check out [this exercise](https://teachbooks.io/template/syntax_exercises/009.html#adding-colours-to-equations) in the TeachBooks template to see for yourself how to add colours to equations!
+Check out [this exercise](https://teachbooks.io/template/syntax_exercises/009.html#adding-colours-to-equations) in the TeachBooks template to see for yourself how to add colours to equations! Or [this exercise](https://teachbooks.io/template/syntax_exercises/012.html#custom-colours-for-admonitions) to see how to make custom coloured admonitions
 
 ## Contribute
 
