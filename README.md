@@ -207,6 +207,9 @@ In which you replaces `<unicode_code_for_symbol>` with for example `f10d` to get
 
 To see examples of usage visit [this page in the TeachBooks manual](https://teachbooks.io/manual/external/Sphinx-Named-Colors/README.html).
 
+## Exercise
+Check out [this exercise](https://teachbooks.io/template/syntax_exercises/009.html#adding-colours-to-equations) in the TeachBooks template to see for yourself how to add colours to equations!
+
 ## Contribute
 
 This tool's repository is stored on [GitHub](https://github.com/TeachBooks/Sphinx-Named-Colors). If you'd like to contribute, you can create a fork and open a pull request on the [GitHub repository](https://github.com/TeachBooks/Sphinx-Named-Colors).
