@@ -344,7 +344,6 @@ def set_named(app,conf):
             'snow':[255,250,250],
             'springgreen':[0,255,127],
             'steelblue':[70,130,180],
-            'tan':[210,180,140],
             'teal':[0,128,128],
             'thistle':[216,191,216],
             'tomato':[255,99,71],
