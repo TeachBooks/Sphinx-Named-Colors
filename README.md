@@ -10,8 +10,8 @@ This section is useful for user type 3-5.
 ```
 +++
 {bdg-primary}`Sphinx Extension`
-{bdg-link-light}`Included in TeachBooks Template <https://teachbooks.io/manual/external/template/README.html>`
-{bdg-link-primary-line}`Included in TeachBooks Favourites <https://teachbooks.io/manual/features/favourites.html>`
+{bdg-link-light}`Included in TeachBooks Template <../template/README.html>`
+{bdg-link-primary-line}`Included in TeachBooks Favourites <../../features/favourites.html>`
 ````
 
 # Custom named colors
@@ -538,4 +538,4 @@ Check out [this exercise](https://teachbooks.io/template/syntax_exercises/009.ht
 
 This tool's repository is stored on [GitHub](https://github.com/TeachBooks/Sphinx-Named-Colors). If you'd like to contribute, you can create a fork and open a pull request on the [GitHub repository](https://github.com/TeachBooks/Sphinx-Named-Colors).
 
-The `README.md` of the branch `manual` is also part of the [TeachBooks manual](https://teachbooks.io/manual/intro.html) as a submodule.
+The `README.md` of the branch `manual` is also part of the TeachBooks manual (this file) as a submodule.
